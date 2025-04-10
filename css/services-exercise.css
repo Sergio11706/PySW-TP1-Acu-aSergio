@@ -1,0 +1,567 @@
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Services Container */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Service Card */
+.service-card {
+    background-color: var(--secondary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Image */
+.service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+/* Service Content */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 1rem;
+    color: var(--primary);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+    color: var(--primary-light);
+}
+
+.service-card p {
+    padding: 0 1rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover p {
+    opacity: 1;
+}
+
+/* Hover Overlay Effect */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(74, 0, 102, 0.1), rgba(102, 0, 153, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        padding: 2rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .service-image {
+        height: 150px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+        padding: 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Exercises Section */
+.exercises {
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+.exercises h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary);
+    position: relative;
+}
+
+.exercises h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+}
+
+/* Filters */
+.filtros {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filtros input[type="radio"] {
+    display: none;
+}
+
+.filtro-labels {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.filtro-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    position: relative;
+}
+
+.filtro-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+#todos:checked~.filtro-labels .filtro-btn:first-child::before,
+#musculacion:checked~.filtro-labels .filtro-btn:nth-child(2)::before,
+#crossfit:checked~.filtro-labels .filtro-btn:nth-child(3)::before,
+#yoga:checked~.filtro-labels .filtro-btn:nth-child(4)::before,
+#spinning:checked~.filtro-labels .filtro-btn:nth-child(5)::before {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.filtro-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.filtro-btn:hover::before {
+    border-color: var(--primary);
+}
+
+#todos:checked~.filtro-labels .filtro-btn:first-child,
+#musculacion:checked~.filtro-labels .filtro-btn:nth-child(2),
+#crossfit:checked~.filtro-labels .filtro-btn:nth-child(3),
+#yoga:checked~.filtro-labels .filtro-btn:nth-child(4),
+#spinning:checked~.filtro-labels .filtro-btn:nth-child(5) {
+    background: var(--primary);
+    color: var(--text-light);
+    border-color: var(--primary);
+}
+
+/* Filter Logic */
+#musculacion:checked~.exercises-contenedor .exercise-card:not(.musculacion),
+#crossfit:checked~.exercises-contenedor .exercise-card:not(.crossfit),
+#yoga:checked~.exercises-contenedor .exercise-card:not(.yoga),
+#spinning:checked~.exercises-contenedor .exercise-card:not(.spinning) {
+    display: none;
+}
+
+#todos:checked~.exercises-contenedor .exercise-card {
+    display: block;
+}
+
+/* Exercises Container */
+.exercises-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Exercise Card */
+.exercise-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Exercise Image */
+.exercise-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.exercise-card:hover .exercise-image {
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    transform: scale(1.05);
+}
+
+/* Masking Effect */
+.exercise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(74, 0, 102, 0.1), rgba(102, 0, 153, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.exercise-card:hover::before {
+    opacity: 1;
+}
+
+/* Overlay Effect */
+.exercise-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    color: var(--text-light);
+    padding: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+
+.exercise-card:hover .overlay {
+    transform: translateY(0);
+}
+
+.exercise-card .overlay h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+.exercise-card .overlay h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.exercise-card:hover .overlay h3::after {
+    transform: scaleX(1);
+}
+
+.exercise-card .overlay p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .exercises-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .exercises-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .exercises {
+        padding: 2rem 1rem;
+    }
+
+    .exercises h2 {
+        font-size: 2rem;
+    }
+
+    .filtros {
+        gap: 1.5rem;
+    }
+
+    .filtro-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .filtro-btn::before {
+        left: 0.5rem;
+        width: 10px;
+        height: 10px;
+        border-width: 1.5px;
+    }
+
+    .exercises-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .exercise-card {
+        padding: 0.75rem;
+    }
+
+    .exercise-image {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercises {
+        padding: 1.5rem;
+    }
+
+    .exercises h2 {
+        font-size: 1.75rem;
+    }
+
+    .filtros {
+        gap: 1rem;
+    }
+
+    .filtro-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .filtro-btn::before {
+        left: 0.4rem;
+        width: 8px;
+        height: 8px;
+        border-width: 1.5px;
+    }
+
+    .exercises-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .exercise-card {
+        padding: 0.5rem;
+    }
+
+    .exercise-image {
+        height: 120px;
+    }
+
+    .exercise-card .overlay {
+        padding: 0.75rem;
+    }
+
+    .exercise-card .overlay h3 {
+        font-size: 1.1rem;
+    }
+
+    .exercise-card .overlay p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Services Classes Section */
+.services-classes {
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+.classes-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.class-card {
+    width: 300px;
+    padding: 2rem;
+    background-color: var(--secondary-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.class-card:hover h3 {
+    color: var(--primary-light);
+}
+
+.class-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+}
+
+.class-card:hover p {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-classes {
+        padding: 2rem 1rem;
+    }
+    
+    .classes-container {
+        gap: 1rem;
+    }
+    
+    .class-card {
+        width: 250px;
+        padding: 1.5rem;
+    }
+    
+    .class-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .class-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .classes-container {
+        justify-content: center;
+    }
+    
+    .class-card {
+        width: 200px;
+        padding: 1rem;
+    }
+    
+    .class-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .class-card p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
