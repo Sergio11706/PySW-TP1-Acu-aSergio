@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresías - MT-Fit</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/membresia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle" aria-label="Alternar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10a10 10 0 0 0-10-10m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m2.5 7a5.5 5.5 0 0 1-5.5 5.5a5.5 5.5 0 0 1-5.5-5.5a5.5 5.5 0 0 1 5.5-5.5a5.5 5.5 0 0 1 5.5 5.5"/>
+            </svg>
+        </button>
+        <div class="header-container">
+            <h1><a href="index.html">MT-Fit</a></h1>
+            <nav>
+                <div class="navbar">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">Servicios</a>
+                            <div class="dropdown-content">
+                                <a href="trainers.html">Entrenadores</a>
+                                <a href="membresia.html">Membresía</a>
+                                <a href="blog.html">Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#" class="login">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="planes">
+            <div class="section-header">
+                <h1>Membresías</h1>
+                <p>Encuentra el plan perfecto para alcanzar tus objetivos</p>
+            </div>
+            <h2>Nuestros Planes</h2>
+            <div class="planes-container">
+                <!-- Plan Básico -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <div class="pricing-options">
+                            <div class="price-monthly">
+                                <input type="radio" name="plan1" id="plan1-monthly" checked>
+                                <label for="plan1-monthly">Mensual</label>
+                                <p class="price">$99<span>/mes</span></p>
+                            </div>
+                            <div class="price-annual">
+                                <input type="radio" name="plan1" id="plan1-annual">
+                                <label for="plan1-annual">Anual</label>
+                                <p class="price">$990<span>/año</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a todas las instalaciones</li>
+                            <li><i class="fas fa-check"></i> Horario flexible</li>
+                            <li><i class="fas fa-check"></i> Clases grupales</li>
+                            <li><i class="fas fa-times"></i> Entrenador personal</li>
+                            <li><i class="fas fa-times"></i> Acceso a eventos especiales</li>
+                        </ul>
+                    </div>
+                    <button class="btn-cta">Seleccionar</button>
+                </div>
+
+                <!-- Plan Premium -->
+                <div class="plan-card destacado">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="pricing-options">
+                            <div class="price-monthly">
+                                <input type="radio" name="plan2" id="plan2-monthly" checked>
+                                <label for="plan2-monthly">Mensual</label>
+                                <p class="price">$149<span>/mes</span></p>
+                            </div>
+                            <div class="price-annual">
+                                <input type="radio" name="plan2" id="plan2-annual">
+                                <label for="plan2-annual">Anual</label>
+                                <p class="price">$1,490<span>/año</span></p>
+                            </div>
+                        </div>
+                        <span class="recomendado">Recomendado</span>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a todas las instalaciones</li>
+                            <li><i class="fas fa-check"></i> Horario flexible</li>
+                            <li><i class="fas fa-check"></i> Clases grupales</li>
+                            <li><i class="fas fa-check"></i> Entrenador personal</li>
+                            <li><i class="fas fa-check"></i> Acceso a eventos especiales</li>
+                            <li><i class="fas fa-check"></i> Programa de nutrición</li>
+                        </ul>
+                    </div>
+                    <button class="btn-cta">Seleccionar</button>
+                </div>
+
+                <!-- Plan VIP -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>VIP</h3>
+                        <div class="pricing-options">
+                            <div class="price-monthly">
+                                <input type="radio" name="plan3" id="plan3-monthly" checked>
+                                <label for="plan3-monthly">Mensual</label>
+                                <p class="price">$199<span>/mes</span></p>
+                            </div>
+                            <div class="price-annual">
+                                <input type="radio" name="plan3" id="plan3-annual">
+                                <label for="plan3-annual">Anual</label>
+                                <p class="price">$1,990<span>/año</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a todas las instalaciones</li>
+                            <li><i class="fas fa-check"></i> Horario flexible</li>
+                            <li><i class="fas fa-check"></i> Clases grupales</li>
+                            <li><i class="fas fa-check"></i> Entrenador personal</li>
+                            <li><i class="fas fa-check"></i> Acceso a eventos especiales</li>
+                            <li><i class="fas fa-check"></i> Programa de nutrición</li>
+                            <li><i class="fas fa-check"></i> Sesiones de masaje</li>
+                            <li><i class="fas fa-check"></i> Acceso 24/7</li>
+                        </ul>
+                    </div>
+                    <button class="btn-cta">Seleccionar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column social-links">
+                <h3>Redes Sociales</h3>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">YouTube</a>
+            </div>
+            <div class="footer-column newsletter-form">
+                <h3>Suscríbete a nuestro Newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Ingresa tu correo Gmail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-column map-container">
+                <h3>Ubícanos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.509278901184!2d-58.38374992463805!3d-34.60369998047845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329898b9a99a61%3A0x9346d24d7d6d5880!2sMT-Fit%20Gym!5e0!3m2!1ses!2suy!4v1681063339000!5m2!1ses!2suy"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 MT-Fit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/trainers.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+</html>

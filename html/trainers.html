@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT-Fit - Entrenadores</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/trainers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle" aria-label="Alternar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10a10 10 0 0 0-10-10m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m2.5 7a5.5 5.5 0 0 1-5.5 5.5a5.5 5.5 0 0 1-5.5-5.5a5.5 5.5 0 0 1 5.5-5.5a5.5 5.5 0 0 1 5.5 5.5"/>
+            </svg>
+        </button>
+        <div class="header-container">
+            <h1><a href="index.html">MT-Fit</a></h1>
+            <nav>
+                <div class="navbar">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">Servicios</a>
+                            <div class="dropdown-content">
+                                <a href="trainers.html">Entrenadores</a>
+                                <a href="membresia.html">Membresía</a>
+                                <a href="blog.html">Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#" class="login">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="trainers">
+            <h2 class="section-title">Nuestros Entrenadores</h2>
+            <div class="trainers-container">
+                <!-- Entrenador 1 -->
+                <div class="trainer-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../img/trainers/trainer-crossfit.jpg" alt="Entrenador Crossfit">
+                                <h3>Carlos García</h3>
+                                <p>Entrenador de Crossfit</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Carlos García</h3>
+                                <div class="trainer-info">
+                                    <div class="rating">
+                                        <input type="radio" name="rating1" id="star1-5" value="5" checked>
+                                        <label for="star1-5" class="star">★</label>
+                                        <input type="radio" name="rating1" id="star1-4" value="4">
+                                        <label for="star1-4" class="star">★</label>
+                                        <input type="radio" name="rating1" id="star1-3" value="3">
+                                        <label for="star1-3" class="star">★</label>
+                                        <input type="radio" name="rating1" id="star1-2" value="2">
+                                        <label for="star1-2" class="star">★</label>
+                                        <input type="radio" name="rating1" id="star1-1" value="1">
+                                        <label for="star1-1" class="star">★</label>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Resistencia</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Fuerza</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Velocidad</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrenador 2 -->
+                <div class="trainer-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../img/trainers/trainer-yoga.jpg" alt="Entrenadora Yoga">
+                                <h3>Maria Rodriguez</h3>
+                                <p>Entrenadora de Yoga</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Maria Rodriguez</h3>
+                                <div class="trainer-info">
+                                    <div class="rating">
+                                        <input type="radio" name="rating2" id="star2-5" value="5" checked>
+                                        <label for="star2-5" class="star">★</label>
+                                        <input type="radio" name="rating2" id="star2-4" value="4">
+                                        <label for="star2-4" class="star">★</label>
+                                        <input type="radio" name="rating2" id="star2-3" value="3">
+                                        <label for="star2-3" class="star">★</label>
+                                        <input type="radio" name="rating2" id="star2-2" value="2">
+                                        <label for="star2-2" class="star">★</label>
+                                        <input type="radio" name="rating2" id="star2-1" value="1">
+                                        <label for="star2-1" class="star">★</label>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Flexibilidad</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Destreza</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Reflejos</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrenador 3 -->
+                <div class="trainer-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../img/trainers/trainer-musculacion.jpg" alt="Entrenador Musculación">
+                                <h3>David López</h3>
+                                <p>Entrenador de Musculación</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>David López</h3>
+                                <div class="trainer-info">
+                                    <div class="rating">
+                                        <input type="radio" name="rating3" id="star3-5" value="5" checked>
+                                        <label for="star3-5" class="star">★</label>
+                                        <input type="radio" name="rating3" id="star3-4" value="4">
+                                        <label for="star3-4" class="star">★</label>
+                                        <input type="radio" name="rating3" id="star3-3" value="3">
+                                        <label for="star3-3" class="star">★</label>
+                                        <input type="radio" name="rating3" id="star3-2" value="2">
+                                        <label for="star3-2" class="star">★</label>
+                                        <input type="radio" name="rating3" id="star3-1" value="1">
+                                        <label for="star3-1" class="star">★</label>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Fuerza</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Resistencia</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Reflejos</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrenador 4 -->
+                <div class="trainer-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../img/trainers/trainer-spinning.jpg" alt="Entrenador Spinning">
+                                <h3>Jose Segundo</h3>
+                                <p>Entrenador de Spinning</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Jose Segundo</h3>
+                                <div class="trainer-info">
+                                    <div class="rating">
+                                        <input type="radio" name="rating4" id="star4-5" value="5" checked>
+                                        <label for="star4-5" class="star">★</label>
+                                        <input type="radio" name="rating4" id="star4-4" value="4">
+                                        <label for="star4-4" class="star">★</label>
+                                        <input type="radio" name="rating4" id="star4-3" value="3">
+                                        <label for="star4-3" class="star">★</label>
+                                        <input type="radio" name="rating4" id="star4-2" value="2">
+                                        <label for="star4-2" class="star">★</label>
+                                        <input type="radio" name="rating4" id="star4-1" value="1">
+                                        <label for="star4-1" class="star">★</label>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Velocidad</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Flexibilidad</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="habilidad">
+                                        <span>Resistencia</span>
+                                        <div class="barra-habilidad">
+                                            <div class="progreso" data-porcentaje="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column social-links">
+                <h3>Redes Sociales</h3>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">YouTube</a>
+            </div>
+            <div class="footer-column newsletter-form">
+                <h3>Suscríbete a nuestro Newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Ingresa tu correo Gmail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-column map-container">
+                <h3>Ubícanos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.509278901184!2d-58.38374992463805!3d-34.60369998047845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329898b9a99a61%3A0x9346d24d7d6d5880!2sMT-Fit%20Gym!5e0!3m2!1ses!2suy!4v1681063339000!5m2!1ses!2suy"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 MT-Fit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
