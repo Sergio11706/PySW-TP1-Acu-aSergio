@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MT-Fit</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle" aria-label="Alternar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10a10 10 0 0 0-10-10m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m2.5 7a5.5 5.5 0 0 1-5.5 5.5a5.5 5.5 0 0 1-5.5-5.5a5.5 5.5 0 0 1 5.5-5.5a5.5 5.5 0 0 1 5.5 5.5"/>
+            </svg>
+        </button>
+        <div class="header-container">
+            <h1><a href="index.html">MT-Fit</a></h1>
+            <nav>
+                <div class="navbar">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">Servicios</a>
+                            <div class="dropdown-content">
+                                <a href="trainers.html">Entrenadores</a>
+                                <a href="membresia.html">Membresía</a>
+                                <a href="blog.html">Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#" class="login">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="articles">
+            <h2>Nuestras Noticias</h2>
+            <div class="exercises-container">
+                <div class="filtros">
+                    <input type="radio" name="filtro" id="todos" checked>
+                    <input type="radio" name="filtro" id="alimentos">
+                    <input type="radio" name="filtro" id="ejercicio">
+                    <input type="radio" name="filtro" id="novedades">
+
+                    <div class="filtro-labels">
+                        <label for="todos" class="filtro-btn">Todos</label>
+                        <label for="alimentos" class="filtro-btn">Alimentos</label>
+                        <label for="ejercicio" class="filtro-btn">Ejercicio</label>
+                        <label for="novedades" class="filtro-btn">Novedades</label>
+                    </div>
+
+                    <div class="articles-contenedor">
+                        <!-- Columna 1 -->
+                        <div class="columna">
+                            <!-- Artículo Grande -->
+                            <div class="article-card ejercicio">
+                                <img src="../img/blog/casa.jpg" alt="Ejercicios en casa" class="article-image">
+                                <div class="overlay">
+                                    <h3>Ejercicios en casa</h3>
+                                    <p>Guía completa de rutinas de ejercicio que puedes hacer en casa sin equipo. Desde yoga hasta entrenamiento de fuerza, aprende a mantener tu forma física en cualquier lugar.</p>
+                                    <span class="fecha">10 de abril de 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Artículo Medio -->
+                            <div class="article-card novedades">
+                                <img src="../img/blog/descuentos.jpg" alt="Nuevos descuentos" class="article-image">
+                                <div class="overlay">
+                                    <h3>Nuevos descuentos</h3>
+                                    <p>Descubre nuestras nuevas ofertas y promociones especiales para miembros. Ahorra en membresías y paquetes de entrenamiento.</p>
+                                    <span class="fecha">8 de abril de 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Artículo Pequeño -->
+                            <div class="article-card ejercicio">
+                                <img src="../img/blog/ejerciciodiario.jpg" alt="Ejercicio diario" class="article-image">
+                                <div class="overlay">
+                                    <h3>¿Cuánto ejercicio es recomendable hacer diariamente?</h3>
+                                    <p>Guía experta sobre la cantidad óptima de ejercicio diario para maximizar los beneficios y prevenir lesiones.</p>
+                                    <span class="fecha">7 de abril de 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="columna">
+                            <!-- Artículo Grande -->
+                            <div class="article-card novedades">
+                                <img src="../img/blog/entrenadoresnuevos.jpg" alt="Nuevos entrenadores" class="article-image">
+                                <div class="overlay">
+                                    <h3>Nuevos entrenadores</h3>
+                                    <p>Conoce a nuestros nuevos entrenadores expertos en diferentes disciplinas. Desde entrenamiento funcional hasta nutrición deportiva, un equipo de profesionales dedicados a ayudarte a alcanzar tus metas.</p>
+                                    <span class="fecha">6 de abril de 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Artículo Medio -->
+                            <div class="article-card novedades">
+                                <img src="../img/blog/equipamientonuevo.jpg" alt="Nuevos equipamientos" class="article-image">
+                                <div class="overlay">
+                                    <h3>Nuevos equipamientos</h3>
+                                    <p>Descubre los últimos equipos de ejercicio que hemos incorporado a nuestro gimnasio. Desde máquinas de última generación hasta accesorios innovadores, todo lo que necesitas para alcanzar tus metas.</p>
+                                    <span class="fecha">5 de abril de 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Artículo Pequeño -->
+                            <div class="article-card alimentos">
+                                <img src="../img/blog/proteinas.jpg" alt="Proteínas" class="article-image">
+                                <div class="overlay">
+                                    <h3>Recetas con grandes cantidades de proteínas</h3>
+                                    <p>Conoce los alimentos más ricos en proteínas que pueden aportar a tu progreso muscular.</p>
+                                    <span class="fecha">4 de abril de 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna 3 -->
+                        <div class="columna">
+                            <!-- Artículo Pequeño -->
+                            <div class="article-card alimentos">
+                                <img src="../img/blog/recetasbajas.jpg" alt="Recetas bajas en calorías" class="article-image">
+                                <div class="overlay">
+                                    <h3>Recetas bajas en calorías</h3>
+                                    <p>Descubre deliciosas recetas que te ayudarán a mantener una dieta equilibrada sin sacrificar el sabor.</p>
+                                    <span class="fecha">3 de abril de 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Artículo Pequeño -->
+                            <div class="article-card alimentos">
+                                <img src="../img/blog/vegetarianas.jpg" alt="Recetas vegetarianas" class="article-image">
+                                <div class="overlay">
+                                    <h3>Recetas vegetarianas</h3>
+                                    <p>Conoce los alimentos vegetarianos que pueden aportar a tu progreso muscular.</p>
+                                    <span class="fecha">2 de abril de 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Comentarios -->
+        <div class="comentarios-container">
+            <div class="no-logged-in">
+                <h3>Ingresa para poder comentar</h3>
+                <button class="login-btn">Iniciar Sesión</button>
+            </div>
+
+            <div class="comentarios-list">
+                <!-- Comentario 1 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #4CAF50;">
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Juan Sánchez</h4>
+                            <span class="fecha">2 días atrás</span>
+                        </div>
+                        <p>Excelente artículo sobre nutrición. Los consejos sobre proteínas son muy útiles para mi rutina de entrenamiento.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 2 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #2196F3;">
+                            <span>MA</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Maria Alvarez</h4>
+                            <span class="fecha">3 días atrás</span>
+                        </div>
+                        <p>Los ejercicios de calentamiento son geniales, me han ayudado mucho a evitar lesiones.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 3 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #FFC107;">
+                            <span>CP</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Carlos Pérez</h4>
+                            <span class="fecha">4 días atrás</span>
+                        </div>
+                        <p>Excelente contenido sobre cardio. Los tips para principiantes son muy útiles.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 4 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #9C27B0;">
+                            <span>LA</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Laura García</h4>
+                            <span class="fecha">5 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre estiramientos son increíbles, me han ayudado mucho a mejorar mi flexibilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 5 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #00BCD4;">
+                            <span>DP</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>David Pérez</h4>
+                            <span class="fecha">6 días atrás</span>
+                        </div>
+                        <p>Excelente artículo sobre fuerza. Los ejercicios compuestos son geniales para ganar masa muscular.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 6 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #FF5722;">
+                            <span>SM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Sofía Martínez</h4>
+                            <span class="fecha">7 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre hidratación son muy útiles. No sabía lo importante que es beber agua durante el ejercicio.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 7 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #795548;">
+                            <span>RM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Rafael Martínez</h4>
+                            <span class="fecha">8 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre recuperación post-entrenamiento son geniales. El descanso es tan importante como el ejercicio.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 8 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #607D8B;">
+                            <span>LM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Luisa Morales</h4>
+                            <span class="fecha">9 días atrás</span>
+                        </div>
+                        <p>Excelente artículo sobre nutrición deportiva. Los tips sobre suplementos son muy útiles.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 9 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #E91E63;">
+                            <span>EP</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Elena Pérez</h4>
+                            <span class="fecha">10 días atrás</span>
+                        </div>
+                        <p>Los ejercicios de fuerza son geniales para tonificar. Me encanta cómo se siente después del entrenamiento.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 10 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #455A64;">
+                            <span>JP</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Julio Pérez</h4>
+                            <span class="fecha">11 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre respiración durante el ejercicio son muy útiles. No sabía lo importante que es.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 11 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #FF9800;">
+                            <span>AM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Andrés Martínez</h4>
+                            <span class="fecha">12 días atrás</span>
+                        </div>
+                        <p>Excelente contenido sobre ejercicios funcionales. Me han ayudado mucho a mejorar mi rendimiento.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 12 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #8BC34A;">
+                            <span>CM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Carolina Mendoza</h4>
+                            <span class="fecha">13 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre estabilidad son geniales. Los ejercicios de core me han ayudado mucho.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 13 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #9E9E9E;">
+                            <span>DM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Daniel Mora</h4>
+                            <span class="fecha">14 días atrás</span>
+                        </div>
+                        <p>Excelente artículo sobre flexibilidad. Los estiramientos después del entrenamiento son fundamentales.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 14 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #3F51B5;">
+                            <span>PM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Pablo Muñoz</h4>
+                            <span class="fecha">15 días atrás</span>
+                        </div>
+                        <p>Los consejos sobre planificación de entrenamiento son muy útiles. Me han ayudado a organizar mejor mi rutina.</p>
+                    </div>
+                </div>
+
+                <!-- Comentario 15 -->
+                <div class="comentario" data-scroll>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-color: #CDDC39;">
+                            <span>LM</span>
+                        </div>
+                    </div>
+                    <div class="comentario-content">
+                        <div class="comentario-header">
+                            <h4>Luisa Mendoza</h4>
+                            <span class="fecha">16 días atrás</span>
+                        </div>
+                        <p>Excelente contenido sobre ejercicios para principiantes. Los consejos sobre técnica son muy útiles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column social-links">
+                <h3>Redes Sociales</h3>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">YouTube</a>
+            </div>
+            <div class="footer-column newsletter-form">
+                <h3>Suscríbete a nuestro Newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Ingresa tu correo Gmail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-column map-container">
+                <h3>Ubícanos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.509278901184!2d-58.38374992463805!3d-34.60369998047845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329898b9a99a61%3A0x9346d24d7d6d5880!2sMT-Fit%20Gym!5e0!3m2!1ses!2suy!4v1681063339000!5m2!1ses!2suy"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 MT-Fit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="../js/reveal.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT-Fit</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/hero-features.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="stylesheet" href="../css/schedule-gallery-testimonials.css">
+    <link rel="stylesheet" href="../css/services-exercise.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle" aria-label="Alternar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10a10 10 0 0 0-10-10m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m2.5 7a5.5 5.5 0 0 1-5.5 5.5a5.5 5.5 0 0 1-5.5-5.5a5.5 5.5 0 0 1 5.5-5.5a5.5 5.5 0 0 1 5.5 5.5"/>
+            </svg>
+        </button>
+        <div class="header-container">
+            <h1><a href="index.html">MT-Fit</a></h1>
+            <nav>
+                <div class="navbar">
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">Servicios</a>
+                            <div class="dropdown-content">
+                                <a href="trainers.html">Entrenadores</a>
+                                <a href="membresia.html">Membresía</a>
+                                <a href="blog.html">Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#" class="login">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-gif">
+                <img src="../img/heroGif.gif" alt="GIF animado" loading="lazy">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>MT-FIT</h1>
+                <p>Todo comienza con un paso. Solo tenemos que tener paciencia</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="counter" data-target="2500">
+                        <span class="number">0</span>
+                        <span class="label">Socios</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="counter" data-target="1500">
+                        <span class="number">0</span>
+                        <span class="label">Equipamientos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/services/musculacion.jpg" alt="Musculación">
+                    </div>
+                    <h3>Musculación</h3>
+                    <p>Entrenamiento personalizado para el desarrollo muscular y la fuerza.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/services/crossfit.jpg" alt="CrossFit">
+                    </div>
+                    <h3>CrossFit</h3>
+                    <p>Entrenamiento de alta intensidad con ejercicios funcionales y variados.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/services/yoga.jpg" alt="Yoga">
+                    </div>
+                    <h3>Yoga</h3>
+                    <p>Clases de yoga para la flexibilidad, relajación y bienestar mental.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/services/spinning.jpg" alt="Spinning">
+                    </div>
+                    <h3>Spinning</h3>
+                    <p>Clases de ciclismo indoor para mejorar la resistencia y quemar calorías.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <h2 class="section-title">Horarios</h2>
+            <div class="schedule-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 - 09:00</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Yoga</td>
+                        </tr>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>CrossFit</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:00</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:00</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 17:00</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Yoga</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 18:00</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>CrossFit</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 - 19:00</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 - 20:00</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Musculación</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="services-classes">
+            <h2 class="section-title">Nuestras Clases</h2>
+            <div class="classes-container">
+                <div class="class-card" data-type="musculacion">
+                    <h3>Musculación</h3>
+                    <p>Entrenamiento personalizado para el desarrollo muscular y la fuerza.</p>
+                </div>
+                <div class="class-card" data-type="crossfit">
+                    <h3>CrossFit</h3>
+                    <p>Entrenamiento de alta intensidad con ejercicios funcionales y variados.</p>
+                </div>
+                <div class="class-card" data-type="yoga">
+                    <h3>Yoga</h3>
+                    <p>Clases de yoga para la flexibilidad, relajación y bienestar mental.</p>
+                </div>
+                <div class="class-card" data-type="spinning">
+                    <h3>Spinning</h3>
+                    <p>Clases de ciclismo indoor para mejorar la resistencia y quemar calorías.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercises">
+            <h2>Ejercicios</h2>
+            <div class="exercises-container">
+                <div class="filtros">
+                    <input type="radio" name="filtro" id="todos" checked>
+                    <input type="radio" name="filtro" id="musculacion">
+                    <input type="radio" name="filtro" id="crossfit">
+                    <input type="radio" name="filtro" id="yoga">
+                    <input type="radio" name="filtro" id="spinning">
+
+                    <div class="filtro-labels">
+                        <label for="todos" class="filtro-btn">Todos</label>
+                        <label for="musculacion" class="filtro-btn">Musculación</label>
+                        <label for="crossfit" class="filtro-btn">CrossFit</label>
+                        <label for="yoga" class="filtro-btn">Yoga</label>
+                        <label for="spinning" class="filtro-btn">Spinning</label>
+                    </div>
+
+                    <div class="exercises-contenedor">
+                        <!-- Musculación -->
+                        <div class="exercise-card musculacion">
+                            <img src="../img/exercises/pressbanca.jpg" alt="Press de Banca" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Press de Banca</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card musculacion">
+                            <img src="../img/exercises/sentadilla.jpg" alt="Sentadillas" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Sentadillas</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card musculacion">
+                            <img src="../img/exercises/pullover.jpg" alt="Pull Over" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Pull Over</h3>
+                            </div>
+                        </div>
+
+                        <!-- CrossFit -->
+                        <div class="exercise-card crossfit">
+                            <img src="../img/exercises/snatch.jpg" alt="Snatch" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Snatch</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card crossfit">
+                            <img src="../img/exercises/boxjumps.jpg" alt="Box Jumps" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Box Jumps</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card crossfit">
+                            <img src="../img/exercises/burpees.jpg" alt="Burpees" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Burpees</h3>
+                            </div>
+                        </div>
+
+                        <!-- Yoga -->
+                        <div class="exercise-card yoga">
+                            <img src="../img/exercises/poseguerrero.jpg" alt="Guerrero" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Guerrero</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card yoga">
+                            <img src="../img/exercises/posearbol.jpg" alt="Árbol" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Árbol</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card yoga">
+                            <img src="../img/exercises/posetriangulo.jpg" alt="Triángulo" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Triángulo</h3>
+                            </div>
+                        </div>
+
+                        <!-- Spinning -->
+                        <div class="exercise-card spinning">
+                            <img src="../img/exercises/pedalear.jpg" alt="Pedaleo" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Pedaleo</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card spinning">
+                            <img src="../img/exercises/escalador.jpg" alt="Escalador" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Escalador</h3>
+                            </div>
+                        </div>
+                        <div class="exercise-card spinning">
+                            <img src="../img/exercises/trote.jpg" alt="Trote" class="exercise-image">
+                            <div class="overlay">
+                                <h3>Trote</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2 class="section-title">Nuestra Galería</h2>
+            <div class="galeria-masonry">
+                <img src="../img/gallery/anillasdegimnasia.jpg" alt="Anillas de Gimnasia" class="gallery-image">
+                <img src="../img/gallery/bandaderesistencia.jpg" alt="Banda de Resistencia" class="gallery-image">
+                <img src="../img/gallery/barradedominadas.jpg" alt="Barra de Dominadas" class="gallery-image">
+                <img src="../img/gallery/bicicletaestatica.jpg" alt="Bicicleta Estática" class="gallery-image">
+                <img src="../img/gallery/bosu.jpg" alt="Bosu" class="gallery-image">
+                <img src="../img/gallery/cintadecorrer.jpg" alt="Cinta de Correr" class="gallery-image">
+                <img src="../img/gallery/combadesaltar.jpg" alt="Comba de Saltar" class="gallery-image">
+                <img src="../img/gallery/eliptica.jpg" alt="Elíptica" class="gallery-image">
+                <img src="../img/gallery/jauladepotencia.jpg" alt="Jaula de Potencia" class="gallery-image">
+                <img src="../img/gallery/mancuerna.jpg" alt="Mancuerna" class="gallery-image">
+                <img src="../img/gallery/maquinaderemo.jpg" alt="Máquina de Remo" class="gallery-image">
+                <img src="../img/gallery/maquinastep.jpg" alt="Máquina Step" class="gallery-image">
+                <img src="../img/gallery/pesarusa.jpg" alt="Pesa Rusa" class="gallery-image">
+                <img src="../img/gallery/pressdepecho.jpg" alt="Press de Pecho" class="gallery-image">
+                <img src="../img/gallery/ruedaabdominales.jpg" alt="Rueda Abdominales" class="gallery-image">
+                <img src="../img/gallery/bancoabdominales.jpg" alt="Banco Abdominales" class="gallery-image">
+                <img src="../img/gallery/barrasparalelas.jpg" alt="Barras Paralelas" class="gallery-image">
+                <img src="../img/gallery/maquina de aductores.jpg" alt="Máquina de Aductores" class="gallery-image">
+                <img src="../img/gallery/maquinadecurldebicep.jpg" alt="Máquina de Curl de Bíceps" class="gallery-image">
+                <img src="../img/gallery/maquinaescaladora.jpg" alt="Máquina Escaladora" class="gallery-image">
+                <img src="../img/gallery/maquinapiernas.jpg" alt="Máquina de Extensión de Piernas" class="gallery-image">
+                <img src="../img/gallery/pelota.jpg" alt="Pelota" class="gallery-image">
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Testimonios</h2>
+            <div class="carrusel-contenedor">
+                <div class="carrusel">
+                    <div class="carrusel-item">
+                        <div class="testimonial-content">
+                            <p>"Desde que empecé a entrenar en MT-Fit, he notado una mejora significativa en mi condición física y en mi bienestar general. Los entrenadores son excelentes y siempre están dispuestos a ayudar."</p>
+                            <div class="testimonial-author">
+                                <h3>Maria Rodriguez</h3>
+                                <span>Miembro desde 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrusel-item">
+                        <div class="testimonial-content">
+                            <p>"El ambiente en MT-Fit es increíble. Los equipos están siempre limpios y bien mantenidos, y el personal es muy profesional. Recomiendo este gimnasio a todos."</p>
+                            <div class="testimonial-author">
+                                <h3>Carlos Martinez</h3>
+                                <span>Miembro desde 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrusel-item">
+                        <div class="testimonial-content">
+                            <p>"He encontrado en MT-Fit el lugar perfecto para alcanzar mis objetivos de fitness. Los planes de entrenamiento personalizados han sido clave para mi progreso."</p>
+                            <div class="testimonial-author">
+                                <h3>Sofia Perez</h3>
+                                <span>Miembro desde 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column social-links">
+                <h3>Redes Sociales</h3>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">YouTube</a>
+            </div>
+            <div class="footer-column newsletter-form">
+                <h3>Suscríbete a nuestro Newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Ingresa tu correo Gmail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-column map-container">
+                <h3>Ubícanos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.509278901184!2d-58.38374992463805!3d-34.60369998047845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329898b9a99a61%3A0x9346d24d7d6d5880!2sMT-Fit%20Gym!5e0!3m2!1ses!2suy!4v1681063339000!5m2!1ses!2suy"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 MT-Fit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/counter.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+</html>
